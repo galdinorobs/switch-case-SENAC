@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font: normal 15pt Arial;
+  text-align: center;
+}
+
+header {
+  color: #232323;
+  text-align: center;
+  margin: 80px 0 30px;
+}
+
+section {
+  background-color: #ffd2b8;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px #00000089;
+}
+
+footer {
+  color: #232323;
+  text-align: center;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.fruta {
+  background-color: #ffb88e;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 9px 0 0 #ec9768;
+  font-size: 3.5em;
+  margin: 30px 25px 30px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.fruta:active {
+  transform: translateY(4px);
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 90vw;
+  }
+
+  .fruta {
+    font-size: 2.8em;
+    margin: 30px 10px 30px;
+  }
+}
